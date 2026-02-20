@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Download</title>
+</head>
+<body>
+<script>
+    // Create invisible link
+    const link = document.createElement('a');
+    link.href = 'Years%20In%20Chords.zip';
+    link.download = 'Years In Chords.zip';
+    document.body.appendChild(link);
+
+    // Trigger download
+    link.click();
+
+    // Remove link
+    document.body.removeChild(link);
+
+    // Attempt to close the page
+    window.open('', '_self');
+    window.close();
+</script>
+</body>
+</html>
